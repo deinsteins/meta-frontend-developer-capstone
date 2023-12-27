@@ -1,7 +1,18 @@
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import pages from "./utils/pages";
+import Layout from "./components/layout/Layout";
+import Home from "./components/pages/Home";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  return (
+    <>
+      <Layout>
+        <Routes>
+          <Route path={pages.get("home").path} element={<Home />} />
+        </Routes>
+      </Layout>
+    </>
+  );
+};
 
 export default App;
