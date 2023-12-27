@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import restaurantFoodImage from "./assets/restaurant-food.jpg";
 import "./Hero.css";
+import pages from "../../../utils/pages";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Link className="button-primary" to="">
+          <Link className="button-primary" to={pages.get("bookings").path}>
             Reserve a table
           </Link>
         </div>

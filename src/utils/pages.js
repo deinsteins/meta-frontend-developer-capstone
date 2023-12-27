@@ -12,5 +12,10 @@ pages.set("orderOnline", {
   path: "/order-online",
   anchorable: true,
 });
+pages.set("confirmedBooking", {
+  name: "Confirmed Booking",
+  path: "/confirmed-booking",
+  anchorable: false,
+});
 
 export default pages;

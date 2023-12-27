@@ -4,6 +4,7 @@ import greekSaladImage from "./assets/greek-salad.jpg";
 import lemonDessertImage from "./assets/lemon-dessert.jpg";
 import "./WeekSpecials.css";
 import MealCard from "./MealCard";
+import pages from "../../../utils/pages";
 
 const meals = [
   {
@@ -31,7 +32,7 @@ const WeekSpecials = () => {
     <section className="container grid week-specials">
       <div className="week-specials-header">
         <h2>This week specials!</h2>
-        <Link className="button-primary" to="">
+        <Link className="button-primary" to={pages.get("orderOnline").path}>
           Online Menu
         </Link>
       </div>
